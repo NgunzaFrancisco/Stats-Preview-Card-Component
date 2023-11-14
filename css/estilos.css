@@ -1,0 +1,133 @@
+
+body {
+	background-color: #0a0c1b;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3em 0;
+	font-size: 15px;
+	color: #fff;
+}
+
+.content{
+	width: 80%;
+	background: #fff;
+	border-radius: 10px;
+	background-color: #1c1938;
+	box-shadow: 0 0 30x #00051B;
+}
+
+/* Cabeçalho */
+.cabecalho {
+	height: 200px;
+	background-image: url(../images/image-header-mobile.jpg);
+	background-size: cover;
+	background-position: center center;
+	border-radius: 10px 10px 0 0;
+	position: relative;
+}
+.cabecalho div {
+	background-color: rgba(146, 93, 185, .5);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+/* Secção de Conteudo */
+.seccao__conteudo {
+	box-sizing: border-box;
+	padding: 2em 1.7em;
+}
+
+.seccao__conteudo--text {
+	text-align: center;
+}
+
+.text__title{
+	font-size: 1.8em;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+
+.text__title span{
+	color: #925db9;
+}
+
+.seccao__conteudo--text p{
+	line-height: 1.4em;
+	margin-bottom: 1.6em;
+	color: #cccae0;
+}
+
+/* Secção dos Números */
+.seccao__conteudo--numbers {
+	text-align: center;
+	margin-top: 3em;
+}
+
+.seccao__conteudo--numbers div {
+	margin-bottom: 2em;
+	text-transform: uppercase;
+}
+
+.seccao__conteudo--numbers div small{
+	color: #cccae0;
+}
+
+.numbers__title{
+	font-size: 1.7em;
+	margin-bottom: .3em;
+	font-weight: bold;
+}
+
+.numbers__desc{
+	font-size: .9em;
+}
+
+/* Telas Desktop  */
+@media (min-width: 1200px){
+	.content {
+		display: flex;
+	}
+
+	.cabecalho {
+		background-image: url(../images/image-header-desktop.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 400px;
+		order: 2;
+		border-radius: 0 10px 10px 0;
+	}
+
+	.seccao__conteudo {
+		order: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 2em;
+	}
+	.seccao__conteudo--text{
+		text-align: left;
+	}
+
+	.text__title{
+		font-size: 2.3em;
+		width: 400px;
+	}
+	.seccao__conteudo--text p{
+		font-size: 1.2em;
+		width: 400px;
+	}
+
+	.seccao__conteudo--numbers{
+		display: flex;
+		justify-content: space-between;
+		margin-right: 2em;
+		margin-top: 1em;
+		text-align: left;
+	}
+
+}
